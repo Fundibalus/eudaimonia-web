@@ -67,7 +67,7 @@ export default function Datenschutz() {
               Die verantwortliche Stelle für die Datenverarbeitung auf dieser
               Website ist:
             </p>
-            <p className="mt-2">Daniel Tonnar-Leyvar</p>
+            <p className="mt-2">Daniel Tonnar-Leyva</p>
             <p>Landsbergerstraße 106</p>
             <p>80339 München</p>
             <p>E-Mail: mail@marlon-prantner.de</p>

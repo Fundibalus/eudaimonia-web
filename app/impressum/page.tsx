@@ -24,7 +24,7 @@ export default function Impressum() {
             <h2 className="font-display text-xs tracking-[0.2em] text-white/40 uppercase mb-3">
               Angaben gemäß § 5 DDG
             </h2>
-            <p>Daniel Tonnar-Leyvar</p>
+            <p>Daniel Tonnar-Leyva</p>
             <p>Landsbergerstraße 106</p>
             <p>80339 München</p>
           </section>
@@ -33,7 +33,7 @@ export default function Impressum() {
             <h2 className="font-display text-xs tracking-[0.2em] text-white/40 uppercase mb-3">
               Vertreten durch
             </h2>
-            <p>Daniel Tonnar-Leyvar</p>
+            <p>Daniel Tonnar-Leyva</p>
           </section>
 
           <section>
@@ -48,7 +48,7 @@ export default function Impressum() {
             <h2 className="font-display text-xs tracking-[0.2em] text-white/40 uppercase mb-3">
               Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
             </h2>
-            <p>Daniel Tonnar-Leyvar</p>
+            <p>Daniel Tonnar-Leyva</p>
             <p>Landsbergerstraße 106</p>
             <p>80339 München</p>
           </section>
