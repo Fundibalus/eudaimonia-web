@@ -36,21 +36,22 @@ export default function HorizonHero() {
     <div key="logo" className="flex flex-col items-center gap-6 px-6">
       <motion.div
         initial={{ scale: 0.88, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
+        animate={logoLoaded ? { scale: 1, opacity: 1 } : { scale: 0.88, opacity: 0 }}
         transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
         className="w-[min(360px,70vw)] h-[min(360px,70vw)]"
         style={{ opacity: 0 }}
       >
         <img
           src="/logo.webp"
-          alt="EUDAIMONIA"
+          alt=""
           width={720}
           height={669}
-          decoding="sync"
+          decoding="async"
           fetchPriority="high"
           onLoad={() => setLogoLoaded(true)}
           style={{
             color: "transparent",
+            visibility: logoLoaded ? "visible" : "hidden",
             filter: logoLoaded
               ? "drop-shadow(0 0 80px rgba(168,85,247,0.6))"
               : "none",
