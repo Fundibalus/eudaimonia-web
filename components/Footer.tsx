@@ -29,7 +29,7 @@ export default function Footer() {
             EUDAIMONIA
           </p>
           <p className="font-display text-[0.65rem] tracking-[0.15em] text-white/40 uppercase">
-            Be free. Be safe.
+            Feel Free. Feel Safe.
           </p>
           <a
             href={event.instagramUrl}
@@ -45,7 +45,7 @@ export default function Footer() {
           </a>
         </div>
 
-        <div className="text-right">
+        <div>
           <p className="text-white/50 text-xs leading-relaxed">
             Nachtwerk Club (neben Nachtgalerie)
           </p>

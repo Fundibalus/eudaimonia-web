@@ -38,13 +38,14 @@ export default function HorizonHero() {
         initial={{ scale: 0.88, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-        className="relative w-[min(360px,70vw)] h-[min(360px,70vw)]"
+        className="relative w-[min(360px,70vw)] h-[min(360px,70vw)] bg-transparent"
       >
         <Image
           src="/logo.webp"
           alt="EUDAIMONIA"
           fill
           priority
+          placeholder="empty"
           className="object-contain drop-shadow-[0_0_80px_rgba(168,85,247,0.6)]"
         />
       </motion.div>
@@ -54,7 +55,10 @@ export default function HorizonHero() {
         transition={{ duration: 0.8, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
         className="text-center"
       >
-        <p className="font-display font-bold text-2xl sm:text-3xl tracking-widest text-iris">
+        <p
+          className="font-display font-bold text-2xl sm:text-3xl tracking-widest text-iris"
+          style={{ fontFeatureSettings: '"lnum" 1, "tnum" 1', fontVariantNumeric: "lining-nums tabular-nums" }}
+        >
           {event.date} &nbsp;·&nbsp; {event.time}
         </p>
         <p className="font-display text-sm tracking-[0.2em] text-white/60 uppercase mt-1">
@@ -94,7 +98,7 @@ export default function HorizonHero() {
         Feel safe.
       </h2>
       <p className="font-display text-white/50 text-[0.6rem] sm:text-xs tracking-[0.3em] uppercase mt-10">
-        Queer Friendly · FLINTA* · Awareness
+        Queer & FLINTA* Friendly · Awareness Concept
       </p>
     </div>,
   ];

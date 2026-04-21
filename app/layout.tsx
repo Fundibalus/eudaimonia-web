@@ -7,6 +7,8 @@ const syne = Syne({
   weight: ["400", "600", "700", "800"],
   variable: "--font-display",
   display: "swap",
+  adjustFontFallback: false,
+  fallback: ["system-ui", "sans-serif"],
 });
 
 const dmSans = DM_Sans({
@@ -15,6 +17,8 @@ const dmSans = DM_Sans({
   style: ["normal", "italic"],
   variable: "--font-body",
   display: "swap",
+  adjustFontFallback: false,
+  fallback: ["system-ui", "sans-serif"],
 });
 
 const instrumentSerif = Instrument_Serif({
@@ -23,6 +27,8 @@ const instrumentSerif = Instrument_Serif({
   style: ["normal", "italic"],
   variable: "--font-editorial",
   display: "swap",
+  adjustFontFallback: false,
+  fallback: ["Georgia", "serif"],
 });
 
 export const metadata: Metadata = {

@@ -83,7 +83,7 @@ export default function Gallery() {
             aria-disabled="true"
             className="font-display text-xs tracking-[0.3em] uppercase px-6 py-3 rounded-sm border border-white/15 text-white/50 cursor-not-allowed"
           >
-            Zur Galerie
+            Zur Galerie (Soon)
           </button>
         </motion.div>
       </div>

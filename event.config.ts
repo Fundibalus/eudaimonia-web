@@ -36,7 +36,7 @@ export const lineup: Act[] = [
     time: "01:00",
     name: "FLOSS",
     origin: "Berlin",
-    genre: "Angry Feminist Pop Techno",
+    genre: "POP · TECHNO",
     desc: "Treibender Techno trifft Charli XCX, SixSex, Slayyyter, Miss Bashful, Rihanna und MARINA. Baddie. Sexy. Empowering.",
   },
 ];

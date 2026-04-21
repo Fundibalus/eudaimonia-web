@@ -16,18 +16,13 @@ const values = [
   },
   {
     icon: "◇",
-    title: "Queer Friendly",
-    desc: "Ein Raum, der queere Menschen zentriert und willkommen heißt.",
-  },
-  {
-    icon: "✧",
-    title: "FLINTA* Welcome",
-    desc: "Frauen, Lesben, inter, nicht-binäre, trans und agender Personen first.",
+    title: "Queer & Flinta Friendly",
+    desc: "Ein Raum, der queere Menschen und FLINTA* zentriert und willkommen heißt.",
   },
   {
     icon: "◎",
-    title: "Awareness",
-    desc: "Bewusste Türpolitik. Nur Ja bedeutet Ja.",
+    title: "Awareness Concept",
+    desc: "Awareness-Team vor Ort. Bewusste Türpolitik. Nur Ja bedeutet Ja.",
   },
 ];
 
