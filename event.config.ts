@@ -10,6 +10,10 @@ export const event = {
   ticketUrl: "https://rausgegangen.de/events/eudaimonia-2/",
   instagramUrl: "https://www.instagram.com/eudaimonia.de/",
   instagramHandle: "@eudaimonia.de",
+  siteUrl: "https://eudaimonia-event.de",
+  // ISO date for structured data
+  isoDate: "2026-05-02T23:00:00+02:00",
+  isoDateEnd: "2026-05-03T06:00:00+02:00",
 };
 
 export type Act = {
