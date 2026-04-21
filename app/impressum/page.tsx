@@ -41,7 +41,7 @@ export default function Impressum() {
               Kontakt
             </h2>
             <p>Telefon: +49 157 5028 5907</p>
-            <p>E-Mail: info@eudamonia-event.de</p>
+            <p>E-Mail: info@eudaimonia-event.de</p>
           </section>
 
           <section>

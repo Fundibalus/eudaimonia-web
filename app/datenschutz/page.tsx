@@ -70,7 +70,7 @@ export default function Datenschutz() {
             <p className="mt-2">Daniel Tonnar-Leyva</p>
             <p>Landsbergerstraße 106</p>
             <p>80339 München</p>
-            <p>E-Mail: info@eudamonia-event.de</p>
+            <p>E-Mail: info@eudaimonia-event.de</p>
           </section>
 
           <section>
