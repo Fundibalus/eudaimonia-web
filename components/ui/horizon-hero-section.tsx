@@ -105,7 +105,7 @@ export default function HorizonHero() {
 
     <div key="feel" className="flex flex-col items-center gap-2 px-6 text-center">
       <p className="font-display text-white/50 text-[0.6rem] sm:text-xs tracking-[0.3em] uppercase mb-8">
-        Queer & FLINTA* Friendly · Awareness Concept
+        Queer & FLINTA* Friendly
       </p>
       <h2
         className="font-editorial italic text-white"
@@ -129,6 +129,9 @@ export default function HorizonHero() {
       >
         Feel safe.
       </h2>
+      <p className="font-display text-white/50 text-[0.6rem] sm:text-xs tracking-[0.3em] uppercase mt-8">
+        Awareness Concept
+      </p>
     </div>,
   ];
 
