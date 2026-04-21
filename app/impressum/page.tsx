@@ -24,23 +24,23 @@ export default function Impressum() {
             <h2 className="font-display text-xs tracking-[0.2em] text-white/40 uppercase mb-3">
               Angaben gemäß § 5 DDG
             </h2>
-            <p>Marlon Prantner</p>
-            <p>[Straße + Hausnummer]</p>
-            <p>[PLZ + Ort]</p>
+            <p>Daniel Tonnar-Leyvar</p>
+            <p>Landsbergerstraße 106</p>
+            <p>80339 München</p>
           </section>
 
           <section>
             <h2 className="font-display text-xs tracking-[0.2em] text-white/40 uppercase mb-3">
               Vertreten durch
             </h2>
-            <p>Marlon Prantner</p>
+            <p>Daniel Tonnar-Leyvar</p>
           </section>
 
           <section>
             <h2 className="font-display text-xs tracking-[0.2em] text-white/40 uppercase mb-3">
               Kontakt
             </h2>
-            <p>Telefon: [Telefonnummer]</p>
+            <p>Telefon: +49 157 5028 5907</p>
             <p>E-Mail: mail@marlon-prantner.de</p>
           </section>
 
@@ -48,9 +48,9 @@ export default function Impressum() {
             <h2 className="font-display text-xs tracking-[0.2em] text-white/40 uppercase mb-3">
               Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
             </h2>
-            <p>Marlon Prantner</p>
-            <p>[Straße + Hausnummer]</p>
-            <p>[PLZ + Ort]</p>
+            <p>Daniel Tonnar-Leyvar</p>
+            <p>Landsbergerstraße 106</p>
+            <p>80339 München</p>
           </section>
 
           <section>

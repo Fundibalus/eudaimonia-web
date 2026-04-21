@@ -1,5 +1,29 @@
 import type { Metadata } from "next";
+import { Syne, DM_Sans, Instrument_Serif } from "next/font/google";
 import "./globals.css";
+
+const syne = Syne({
+  subsets: ["latin"],
+  weight: ["400", "600", "700", "800"],
+  variable: "--font-display",
+  display: "swap",
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500"],
+  style: ["normal", "italic"],
+  variable: "--font-body",
+  display: "swap",
+});
+
+const instrumentSerif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: "400",
+  style: ["normal", "italic"],
+  variable: "--font-editorial",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "EUDAIMONIA — Be free. Be safe.",
@@ -18,7 +42,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de" className="h-full">
+    <html
+      lang="de"
+      className={`h-full ${syne.variable} ${dmSans.variable} ${instrumentSerif.variable}`}
+    >
       <body className="grain min-h-full bg-black text-white antialiased">
         {children}
       </body>

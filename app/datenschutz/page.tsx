@@ -67,9 +67,9 @@ export default function Datenschutz() {
               Die verantwortliche Stelle für die Datenverarbeitung auf dieser
               Website ist:
             </p>
-            <p className="mt-2">Marlon Prantner</p>
-            <p>[Straße + Hausnummer]</p>
-            <p>[PLZ + Ort]</p>
+            <p className="mt-2">Daniel Tonnar-Leyvar</p>
+            <p>Landsbergerstraße 106</p>
+            <p>80339 München</p>
             <p>E-Mail: mail@marlon-prantner.de</p>
           </section>
 
@@ -97,6 +97,29 @@ export default function Datenschutz() {
               Beim Klick auf den Tickets-Button wirst du zu rausgegangen.de
               weitergeleitet. Für die dortige Datenverarbeitung gilt die
               Datenschutzerklärung von rausgegangen.de.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="font-display text-xs tracking-[0.2em] text-white/40 uppercase mb-3">
+              6. Reichweitenmessung (Cloudflare Web Analytics)
+            </h2>
+            <p>
+              Diese Website nutzt Cloudflare Web Analytics zur anonymen
+              Reichweitenmessung. Es werden keine Cookies gesetzt und keine
+              personenbezogenen Daten gespeichert. Erfasst werden ausschließlich
+              aggregierte Daten wie Seitenaufrufe, Referrer und ungefähre
+              Herkunftsregion. Eine Identifikation einzelner Besucher:innen ist
+              nicht möglich. Weitere Informationen:{" "}
+              <a
+                href="https://www.cloudflare.com/web-analytics/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-white/60"
+              >
+                cloudflare.com/web-analytics
+              </a>
+              .
             </p>
           </section>
         </div>
