@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://eudaimonia-event.de/sitemap.xml

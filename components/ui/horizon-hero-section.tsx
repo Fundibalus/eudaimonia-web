@@ -37,17 +37,25 @@ export default function HorizonHero() {
         initial={{ scale: 0.88, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-        className="w-[min(360px,70vw)] h-[min(360px,70vw)]"
+        className="relative w-[min(360px,70vw)] h-[min(360px,70vw)]"
         style={{ opacity: 0 }}
       >
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(circle at center, rgba(168,85,247,0.45) 0%, rgba(168,85,247,0.2) 35%, transparent 65%)",
+          }}
+        />
         <img
-          src="/logo.png"
+          src="/logo.webp"
           alt="EUDAIMONIA"
           width={720}
           height={669}
           decoding="async"
           fetchPriority="high"
-          className="w-full h-full object-contain drop-shadow-[0_0_80px_rgba(168,85,247,0.6)]"
+          className="relative w-full h-full object-contain"
         />
       </motion.div>
       <motion.div
