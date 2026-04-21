@@ -38,12 +38,14 @@ export default function HorizonHero() {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
         className="w-[min(360px,70vw)] h-[min(360px,70vw)]"
+        style={{ opacity: 0 }}
       >
         <img
           src="/logo.webp"
           alt="EUDAIMONIA"
           width={720}
           height={669}
+          style={{ color: "transparent" }}
           className="w-full h-full object-contain drop-shadow-[0_0_80px_rgba(168,85,247,0.6)]"
         />
       </motion.div>
@@ -103,7 +105,7 @@ export default function HorizonHero() {
 
   return (
     <div ref={containerRef} style={{ height: `${TOTAL_SECTIONS * 100}vh`, position: "relative" }}>
-      <div style={{ position: "sticky", top: 0, height: "100vh", overflow: "hidden" }}>
+      <div style={{ position: "sticky", top: 0, height: "100vh", clipPath: "inset(0)" }}>
         <div className="absolute inset-0 z-0">
           <Warp
             style={{ height: "100%", width: "100%" }}
