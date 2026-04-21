@@ -143,7 +143,31 @@ export default function Datenschutz() {
 
           <section>
             <h2 className="font-display text-xs tracking-[0.2em] text-white/40 uppercase mb-3">
-              6. Reichweitenmessung (Cloudflare Web Analytics)
+              6. Verlinkung auf Instagram
+            </h2>
+            <p>
+              Im Footer dieser Website befindet sich ein Link zu unserem
+              Instagram-Profil. Anbieter ist Meta Platforms Ireland Ltd.,
+              Merrion Road, Dublin 4, Irland. Es handelt sich um einen
+              einfachen Hyperlink — beim bloßen Aufruf dieser Website werden
+              keine Daten an Meta übertragen. Erst beim aktiven Klick auf den
+              Link gelangst du zu Instagram; ab dann gilt die
+              Datenschutzerklärung von Meta:{" "}
+              <a
+                href="https://privacycenter.instagram.com/policy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-white/60"
+              >
+                privacycenter.instagram.com/policy
+              </a>
+              .
+            </p>
+          </section>
+
+          <section>
+            <h2 className="font-display text-xs tracking-[0.2em] text-white/40 uppercase mb-3">
+              7. Reichweitenmessung (Cloudflare Web Analytics)
             </h2>
             <p className="mb-4">
               Diese Website nutzt Cloudflare Web Analytics zur anonymen
