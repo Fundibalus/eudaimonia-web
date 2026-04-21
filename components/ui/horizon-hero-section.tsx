@@ -11,6 +11,7 @@ const TOTAL_SECTIONS = 2;
 export default function HorizonHero() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [currentSection, setCurrentSection] = useState(0);
+  const [logoLoaded, setLogoLoaded] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,8 +46,16 @@ export default function HorizonHero() {
           alt="EUDAIMONIA"
           width={720}
           height={669}
-          style={{ color: "transparent" }}
-          className="w-full h-full object-contain drop-shadow-[0_0_80px_rgba(168,85,247,0.6)]"
+          decoding="sync"
+          fetchPriority="high"
+          onLoad={() => setLogoLoaded(true)}
+          style={{
+            color: "transparent",
+            filter: logoLoaded
+              ? "drop-shadow(0 0 80px rgba(168,85,247,0.6))"
+              : "none",
+          }}
+          className="w-full h-full object-contain"
         />
       </motion.div>
       <motion.div
@@ -118,7 +127,7 @@ export default function HorizonHero() {
             shapeScale={0.1}
             scale={1}
             rotation={0}
-            speed={0.6}
+            speed={1.2}
             colors={[
               "hsl(270, 100%, 4%)",
               "hsl(280, 90%, 18%)",

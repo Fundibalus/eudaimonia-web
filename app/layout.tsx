@@ -83,6 +83,15 @@ export default function RootLayout({
       lang="de"
       className={`h-full ${syne.variable} ${dmSans.variable} ${instrumentSerif.variable}`}
     >
+      <head>
+        <link
+          rel="preload"
+          as="image"
+          href="/logo.webp"
+          type="image/webp"
+          fetchPriority="high"
+        />
+      </head>
       <body className="grain min-h-full bg-black text-white antialiased">
         {children}
       </body>
