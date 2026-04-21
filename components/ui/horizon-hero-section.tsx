@@ -174,7 +174,7 @@ export default function HorizonHero() {
         {sections.map((section, i) => (
           <div
             key={i}
-            className="absolute inset-0 flex items-center justify-center z-20"
+            className="absolute inset-0 flex items-center justify-center pb-[12vh] sm:pb-0 z-20"
             style={{
               opacity: currentSection === i ? 1 : 0,
               transition: "opacity 0.5s ease",
