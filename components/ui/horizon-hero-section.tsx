@@ -41,13 +41,7 @@ export default function HorizonHero() {
 
   const sections = [
     <div key="logo" className="flex flex-col items-center gap-6 px-6">
-      <motion.div
-        initial={{ scale: 0.88, opacity: 0 }}
-        animate={logoLoaded ? { scale: 1, opacity: 1 } : { scale: 0.88, opacity: 0 }}
-        transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-        className="w-[min(360px,70vw)] h-[min(360px,70vw)]"
-        style={{ opacity: 0 }}
-      >
+      <div className="w-[min(360px,70vw)] h-[min(360px,70vw)]">
         <img
           ref={logoRef}
           src="/logo.png"
@@ -66,7 +60,7 @@ export default function HorizonHero() {
           }}
           className="w-full h-full object-contain"
         />
-      </motion.div>
+      </div>
       <motion.div
         initial={{ y: 30, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
