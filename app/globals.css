@@ -1,26 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Instrument+Serif:ital@0;1&display=swap');
 @import "tailwindcss";
 
+/* ── Base ───────────────────────────────────────────────────── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-editorial: 'Instrument Serif', serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #000;
+  color: #fff;
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+/* ── Iridescent gradient ────────────────────────────────────── */
+@keyframes iris-shift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.text-iris {
+  background: linear-gradient(
+    135deg,
+    #a855f7,
+    #ec4899,
+    #60a5fa,
+    #f59e0b,
+    #34d399,
+    #a855f7
+  );
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: iris-shift 20s ease infinite;
+}
+
+.border-iris {
+  border-image: linear-gradient(135deg, #a855f7, #ec4899, #60a5fa, #f59e0b) 1;
+}
+
+/* ── Chrome / reflected silver with purple tint ─────────────── */
+.text-chrome {
+  background: linear-gradient(
+    105deg,
+    #f0e4ff 0%,
+    #c8a8ee 9%,
+    #4a2880 16%,
+    #b088dc 24%,
+    #ffffff 31%,
+    #7848b8 39%,
+    #1f0a3e 46%,
+    #a078d0 54%,
+    #f4e8ff 63%,
+    #5a2890 71%,
+    #d4b0f0 80%,
+    #2e1050 88%,
+    #ece0ff 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter:
+    drop-shadow(0 2px 0 rgba(30, 10, 60, 0.8))
+    drop-shadow(0 0 28px rgba(168, 85, 247, 0.45));
+}
+
+/* ── Iridescent button ──────────────────────────────────────── */
+.btn-iris {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem 2.5rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  overflow: hidden;
+  background: transparent;
+  z-index: 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-iris::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #a855f7, #ec4899, #60a5fa, #f59e0b, #a855f7);
+  background-size: 300% 300%;
+  animation: iris-shift 20s ease infinite;
+  z-index: -1;
+  opacity: 0.15;
+  border-radius: 2px;
+}
+
+.btn-iris::after {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  background: #000;
+  border-radius: 1px;
+  z-index: -1;
+}
+
+.btn-iris:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.4), 0 0 60px rgba(236, 72, 153, 0.2);
+}
+
+.btn-iris:hover::before {
+  opacity: 0.3;
+}
+
+/* ── Grain overlay ──────────────────────────────────────────── */
+.grain::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  opacity: 0.035;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* ── Club glow blobs ────────────────────────────────────────── */
+.glow-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+/* ── Typography ─────────────────────────────────────────────── */
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-editorial {
+  font-family: var(--font-editorial);
+  letter-spacing: -0.01em;
+}
+
+/* ── Section fade-in (Framer Motion fallback) ───────────────── */
+.section-hidden {
+  opacity: 0;
+  transform: translateY(32px);
 }
