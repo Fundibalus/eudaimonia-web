@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { Warp } from "@paper-design/shaders-react";
 import { ButtonColorful } from "@/components/ui/button-colorful";
 import { event } from "@/event.config";
@@ -38,15 +37,14 @@ export default function HorizonHero() {
         initial={{ scale: 0.88, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-        className="relative w-[min(360px,70vw)] h-[min(360px,70vw)] bg-transparent"
+        className="w-[min(360px,70vw)] h-[min(360px,70vw)]"
       >
-        <Image
+        <img
           src="/logo.webp"
           alt="EUDAIMONIA"
-          fill
-          priority
-          placeholder="empty"
-          className="object-contain drop-shadow-[0_0_80px_rgba(168,85,247,0.6)]"
+          width={720}
+          height={669}
+          className="w-full h-full object-contain drop-shadow-[0_0_80px_rgba(168,85,247,0.6)]"
         />
       </motion.div>
       <motion.div
