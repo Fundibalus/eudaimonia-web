@@ -10,15 +10,7 @@ const TOTAL_SECTIONS = 2;
 
 export default function HorizonHero() {
   const containerRef = useRef<HTMLDivElement>(null);
-  const logoRef = useRef<HTMLImageElement>(null);
   const [currentSection, setCurrentSection] = useState(0);
-  const [logoLoaded, setLogoLoaded] = useState(false);
-
-  useEffect(() => {
-    if (logoRef.current?.complete && logoRef.current.naturalWidth > 0) {
-      setLogoLoaded(true);
-    }
-  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,26 +33,23 @@ export default function HorizonHero() {
 
   const sections = [
     <div key="logo" className="flex flex-col items-center gap-6 px-6">
-      <div className="w-[min(360px,70vw)] h-[min(360px,70vw)]">
+      <motion.div
+        initial={{ scale: 0.88, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+        className="w-[min(360px,70vw)] h-[min(360px,70vw)]"
+        style={{ opacity: 0 }}
+      >
         <img
-          ref={logoRef}
           src="/logo.png"
-          alt=""
+          alt="EUDAIMONIA"
           width={720}
           height={669}
           decoding="async"
           fetchPriority="high"
-          onLoad={() => setLogoLoaded(true)}
-          style={{
-            color: "transparent",
-            visibility: logoLoaded ? "visible" : "hidden",
-            filter: logoLoaded
-              ? "drop-shadow(0 0 80px rgba(168,85,247,0.6))"
-              : "none",
-          }}
-          className="w-full h-full object-contain"
+          className="w-full h-full object-contain drop-shadow-[0_0_80px_rgba(168,85,247,0.6)]"
         />
-      </div>
+      </motion.div>
       <motion.div
         initial={{ y: 30, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
