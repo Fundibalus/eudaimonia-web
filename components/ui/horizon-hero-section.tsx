@@ -19,7 +19,16 @@ export default function HorizonHero() {
   const [shaderReady, setShaderReady] = useState(false);
 
   useEffect(() => {
-    const id = window.setTimeout(() => setShaderReady(true), 400);
+    const mount = () => setShaderReady(true);
+    const w = window as unknown as {
+      requestIdleCallback?: (cb: () => void, opts?: { timeout: number }) => number;
+      cancelIdleCallback?: (id: number) => void;
+    };
+    if (w.requestIdleCallback) {
+      const id = w.requestIdleCallback(mount, { timeout: 1500 });
+      return () => w.cancelIdleCallback?.(id);
+    }
+    const id = window.setTimeout(mount, 800);
     return () => window.clearTimeout(id);
   }, []);
 
@@ -131,13 +140,13 @@ export default function HorizonHero() {
           className="absolute inset-0 z-0"
           style={{
             background:
-              "radial-gradient(ellipse at center, hsl(290, 85%, 22%) 0%, hsl(280, 90%, 12%) 45%, hsl(270, 100%, 4%) 90%)",
+              "radial-gradient(ellipse at center, hsl(285, 80%, 18%) 0%, hsl(275, 85%, 10%) 50%, hsl(270, 100%, 5%) 95%)",
           }}
         />
         {shaderReady && (
           <div
             className="absolute inset-0 z-0"
-            style={{ animation: "fade-in 1.2s ease forwards" }}
+            style={{ animation: "fade-in 2.4s ease forwards" }}
           >
             <Warp
               style={{ height: "100%", width: "100%" }}
