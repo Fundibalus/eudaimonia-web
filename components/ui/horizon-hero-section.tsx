@@ -50,7 +50,7 @@ export default function HorizonHero() {
       >
         <img
           ref={logoRef}
-          src="/logo.webp"
+          src="/logo.png"
           alt=""
           width={720}
           height={669}
