@@ -2,15 +2,26 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { Warp } from "@paper-design/shaders-react";
+import dynamic from "next/dynamic";
 import { ButtonColorful } from "@/components/ui/button-colorful";
 import { event } from "@/event.config";
+
+const Warp = dynamic(
+  () => import("@paper-design/shaders-react").then((m) => ({ default: m.Warp })),
+  { ssr: false },
+);
 
 const TOTAL_SECTIONS = 2;
 
 export default function HorizonHero() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [currentSection, setCurrentSection] = useState(0);
+  const [shaderReady, setShaderReady] = useState(false);
+
+  useEffect(() => {
+    const id = window.setTimeout(() => setShaderReady(true), 400);
+    return () => window.clearTimeout(id);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -115,27 +126,40 @@ export default function HorizonHero() {
   return (
     <div ref={containerRef} style={{ height: `${TOTAL_SECTIONS * 100}vh`, position: "relative" }}>
       <div style={{ position: "sticky", top: 0, height: "100vh", clipPath: "inset(0)" }}>
-        <div className="absolute inset-0 z-0">
-          <Warp
-            style={{ height: "100%", width: "100%" }}
-            proportion={0.45}
-            softness={1}
-            distortion={0.25}
-            swirl={0.8}
-            swirlIterations={10}
-            shape="checks"
-            shapeScale={0.1}
-            scale={1}
-            rotation={0}
-            speed={1.2}
-            colors={[
-              "hsl(270, 100%, 4%)",
-              "hsl(280, 90%, 18%)",
-              "hsl(260, 95%, 10%)",
-              "hsl(290, 85%, 28%)",
-            ]}
-          />
-        </div>
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 z-0"
+          style={{
+            background:
+              "radial-gradient(ellipse at center, hsl(290, 85%, 22%) 0%, hsl(280, 90%, 12%) 45%, hsl(270, 100%, 4%) 90%)",
+          }}
+        />
+        {shaderReady && (
+          <div
+            className="absolute inset-0 z-0"
+            style={{ animation: "fade-in 1.2s ease forwards" }}
+          >
+            <Warp
+              style={{ height: "100%", width: "100%" }}
+              proportion={0.45}
+              softness={1}
+              distortion={0.25}
+              swirl={0.8}
+              swirlIterations={10}
+              shape="checks"
+              shapeScale={0.1}
+              scale={1}
+              rotation={0}
+              speed={1.2}
+              colors={[
+                "hsl(270, 100%, 4%)",
+                "hsl(280, 90%, 18%)",
+                "hsl(260, 95%, 10%)",
+                "hsl(290, 85%, 28%)",
+              ]}
+            />
+          </div>
+        )}
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/80 pointer-events-none z-10" />
 
         {sections.map((section, i) => (
