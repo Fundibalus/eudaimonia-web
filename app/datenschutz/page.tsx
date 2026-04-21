@@ -35,16 +35,34 @@ export default function Datenschutz() {
 
           <section>
             <h2 className="font-display text-xs tracking-[0.2em] text-white/40 uppercase mb-3">
-              2. Hosting
+              2. Hosting (Cloudflare Pages)
             </h2>
+            <p className="mb-4">
+              Diese Website wird über Cloudflare Pages gehostet. Anbieter ist
+              Cloudflare, Inc., 101 Townsend St., San Francisco, CA 94107, USA.
+              Beim Aufruf der Website werden automatisch Server-Log-Dateien
+              erfasst, darunter IP-Adresse, Browsertyp und -version, verwendetes
+              Betriebssystem, Referrer URL und Uhrzeit der Serveranfrage.
+            </p>
+            <p className="mb-4">
+              Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f
+              DSGVO (berechtigtes Interesse am sicheren und stabilen Betrieb der
+              Website). Die Daten werden nicht mit anderen Quellen
+              zusammengeführt. Cloudflare verarbeitet die Daten gemäß seiner
+              Datenschutzerklärung unter{" "}
+              <a
+                href="https://www.cloudflare.com/privacypolicy/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-white/60"
+              >
+                cloudflare.com/privacypolicy
+              </a>
+              .
+            </p>
             <p>
-              Diese Website wird bei einem externen Dienstleister gehostet
-              (Hoster). Die personenbezogenen Daten, die auf dieser Website
-              erfasst werden, werden auf den Servern des Hosters gespeichert.
-              Hierbei kann es sich v. a. um IP-Adressen, Kontaktanfragen,
-              Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten,
-              Namen, Websitezugriffe und sonstige über eine Website generierte
-              Daten handeln.
+              Mit Cloudflare besteht ein Auftragsverarbeitungsvertrag (AVV)
+              gemäß Art. 28 DSGVO.
             </p>
           </section>
 
@@ -75,17 +93,40 @@ export default function Datenschutz() {
 
           <section>
             <h2 className="font-display text-xs tracking-[0.2em] text-white/40 uppercase mb-3">
-              4. Datenerfassung auf dieser Website
+              4. Deine Rechte
             </h2>
-            <p className="mb-3 font-display text-white/80">Server-Log-Dateien</p>
+            <p className="mb-4">
+              Du hast gegenüber uns folgende Rechte hinsichtlich deiner
+              personenbezogenen Daten:
+            </p>
+            <ul className="list-disc list-inside space-y-1 mb-4">
+              <li>Recht auf Auskunft (Art. 15 DSGVO)</li>
+              <li>Recht auf Berichtigung (Art. 16 DSGVO)</li>
+              <li>Recht auf Löschung (Art. 17 DSGVO)</li>
+              <li>Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
+              <li>Recht auf Datenübertragbarkeit (Art. 20 DSGVO)</li>
+              <li>Recht auf Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)</li>
+            </ul>
+            <p className="mb-4">
+              Zur Ausübung deiner Rechte wende dich an: info@eudaimonia-event.de
+            </p>
+            <p className="mb-3 font-display text-white/80">
+              Beschwerderecht bei der Aufsichtsbehörde
+            </p>
             <p>
-              Der Provider der Seiten erhebt und speichert automatisch
-              Informationen in sogenannten Server-Log-Dateien, die dein
-              Browser automatisch übermittelt. Dies sind: Browsertyp und
-              Browserversion, verwendetes Betriebssystem, Referrer URL,
-              Hostname des zugreifenden Rechners, Uhrzeit der Serveranfrage
-              und IP-Adresse. Eine Zusammenführung dieser Daten mit anderen
-              Datenquellen wird nicht vorgenommen.
+              Du hast das Recht, dich bei einer Datenschutz-Aufsichtsbehörde
+              über die Verarbeitung deiner personenbezogenen Daten zu beschweren.
+              Zuständig ist das Bayerische Landesamt für Datenschutzaufsicht
+              (BayLDA), Promenade 27, 91522 Ansbach,{" "}
+              <a
+                href="https://www.lda.bayern.de"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-white/60"
+              >
+                lda.bayern.de
+              </a>
+              .
             </p>
           </section>
 
@@ -104,13 +145,18 @@ export default function Datenschutz() {
             <h2 className="font-display text-xs tracking-[0.2em] text-white/40 uppercase mb-3">
               6. Reichweitenmessung (Cloudflare Web Analytics)
             </h2>
-            <p>
+            <p className="mb-4">
               Diese Website nutzt Cloudflare Web Analytics zur anonymen
               Reichweitenmessung. Es werden keine Cookies gesetzt und keine
               personenbezogenen Daten gespeichert. Erfasst werden ausschließlich
               aggregierte Daten wie Seitenaufrufe, Referrer und ungefähre
               Herkunftsregion. Eine Identifikation einzelner Besucher:innen ist
-              nicht möglich. Weitere Informationen:{" "}
+              nicht möglich.
+            </p>
+            <p>
+              Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f
+              DSGVO (berechtigtes Interesse an anonymer Nutzungsstatistik).
+              Weitere Informationen:{" "}
               <a
                 href="https://www.cloudflare.com/web-analytics/"
                 target="_blank"
