@@ -10,8 +10,15 @@ const TOTAL_SECTIONS = 2;
 
 export default function HorizonHero() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const logoRef = useRef<HTMLImageElement>(null);
   const [currentSection, setCurrentSection] = useState(0);
   const [logoLoaded, setLogoLoaded] = useState(false);
+
+  useEffect(() => {
+    if (logoRef.current?.complete && logoRef.current.naturalWidth > 0) {
+      setLogoLoaded(true);
+    }
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,6 +49,7 @@ export default function HorizonHero() {
         style={{ opacity: 0 }}
       >
         <img
+          ref={logoRef}
           src="/logo.webp"
           alt=""
           width={720}
