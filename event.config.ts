@@ -10,7 +10,6 @@ export const event = {
   ticketUrl: "https://rausgegangen.de/events/eudaimonia-2/",
   instagramUrl: "https://www.instagram.com/eudaimonia.de/",
   instagramHandle: "@eudaimonia.de",
-  beholdFeedId: "", // TODO: Feed-ID von behold.so einfügen
 };
 
 export type Act = {
