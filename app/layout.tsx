@@ -34,11 +34,11 @@ const instrumentSerif = Instrument_Serif({
 export const metadata: Metadata = {
   metadataBase: new URL("https://eudaimonia-event.de"),
   title: {
-    default: "EUDAIMONIA — Feel Free. Feel Safe. | München 02.05.26",
+    default: "EUDAIMONIA — Feel Free. Feel Safe. | München 13.06.26",
     template: "%s | EUDAIMONIA",
   },
   description:
-    "EUDAIMONIA — queere Clubnacht in München. Queer & FLINTA* friendly, Awareness Concept, Safe Space. 02. Mai 2026, 23 Uhr, Nachtwerk Club München.",
+    "EUDAIMONIA — queere Clubnacht in München. Queer & FLINTA* friendly, Awareness Concept, Safe Space. 13. Juni 2026, 23 Uhr, Nachtwerk Club München.",
   keywords: [
     "EUDAIMONIA",
     "queere Party München",
@@ -54,17 +54,17 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "EUDAIMONIA — Feel Free. Feel Safe.",
-    description: "02. Mai 2026 · 23 Uhr · Nachtwerk Club München. Queer & FLINTA* friendly.",
+    description: "13. Juni 2026 · 23 Uhr · Nachtwerk Club München. Queer & FLINTA* friendly.",
     url: "https://eudaimonia-event.de",
     siteName: "EUDAIMONIA",
-    images: [{ url: "/flyer.png", width: 1200, height: 630, alt: "EUDAIMONIA Flyer 02.05.2026" }],
+    images: [{ url: "/flyer.png", width: 1200, height: 630, alt: "EUDAIMONIA Flyer 13.06.2026" }],
     locale: "de_DE",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "EUDAIMONIA — Feel Free. Feel Safe.",
-    description: "02. Mai 2026 · 23 Uhr · Nachtwerk Club München.",
+    description: "13. Juni 2026 · 23 Uhr · Nachtwerk Club München.",
     images: ["/flyer.png"],
   },
   robots: {

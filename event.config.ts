@@ -4,16 +4,16 @@
 // ─────────────────────────────────────────────────────────────
 
 export const event = {
-  date: "02.MAI",
+  date: "13.JUNI",
   time: "23 UHR",
   venue: "Nachtwerk Club · München",
-  ticketUrl: "https://rausgegangen.de/events/eudaimonia-2/",
+  ticketUrl: "https://o6367.t0158.bookzuck.com/ticket-client-naga/event/llzsce?mode=ticket",
   instagramUrl: "https://www.instagram.com/eudaimonia.de/",
   instagramHandle: "@eudaimonia.de",
   siteUrl: "https://eudaimonia-event.de",
   // ISO date for structured data
-  isoDate: "2026-05-02T23:00:00+02:00",
-  isoDateEnd: "2026-05-03T06:00:00+02:00",
+  isoDate: "2026-06-13T23:00:00+02:00",
+  isoDateEnd: "2026-06-14T06:00:00+02:00",
 };
 
 export type Act = {
@@ -33,14 +33,15 @@ export const lineup: Act[] = [
   },
   {
     time: "~01:00",
-    name: "Interactive Performance",
-    desc: "Erwartet euch eine interaktive Performance, die ihr so noch nicht erlebt habt – stay curious.",
+    name: "Dragshow & Hosting",
+    origin: "@itsabarbieq",
+    desc: "Dragshow und Hosting von @itsabarbieq – glamourös, frech, unverschämt unterhaltsam. Die Bühne gehört der Diva.",
   },
   {
-    time: "01:00",
-    name: "FLOSS",
-    origin: "Berlin",
-    genre: "POP · TECHNO",
-    desc: "Treibender Techno trifft Charli XCX, SixSex, Slayyyter, Miss Bashful, Rihanna und MARINA. Baddie. Sexy. Empowering.",
+    time: "02:30",
+    name: "SONALIE SOLAR",
+    origin: "Munich",
+    genre: "SEXY LATIN TECHNO",
+    desc: "Sexy Latin Techno – heiße Rhythmen, treibende Beats. Sonalie Solar bringt München zum Beben.",
   },
 ];
