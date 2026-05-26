@@ -135,9 +135,9 @@ export default function Datenschutz() {
               5. Externe Dienste
             </h2>
             <p>
-              Beim Klick auf den Tickets-Button wirst du zu rausgegangen.de
-              weitergeleitet. Für die dortige Datenverarbeitung gilt die
-              Datenschutzerklärung von rausgegangen.de.
+              Beim Klick auf den Tickets-Button wirst du zu bookzuck.com
+              weitergeleitet (Ticketing-Anbieter NAGA). Für die dortige
+              Datenverarbeitung gilt die Datenschutzerklärung von bookzuck.com.
             </p>
           </section>
 
