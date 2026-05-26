@@ -6,12 +6,12 @@ import { useRef } from "react";
 // Replace these src values with real image paths when available.
 // e.g. "/gallery/photo-01.jpg"
 const PHOTOS: { src: string | null; alt: string }[] = [
-  { src: null, alt: "Party Foto 1" },
-  { src: null, alt: "Party Foto 2" },
-  { src: null, alt: "Party Foto 3" },
-  { src: null, alt: "Party Foto 4" },
-  { src: null, alt: "Party Foto 5" },
-  { src: null, alt: "Party Foto 6" },
+  { src: "/gallery/image0.webp", alt: "Party Foto 1" },
+  { src: "/gallery/image1.webp", alt: "Party Foto 2" },
+  { src: "/gallery/image2.webp", alt: "Party Foto 3" },
+  { src: "/gallery/image3.webp", alt: "Party Foto 4" },
+  { src: "/gallery/IMG_0004.webp", alt: "Party Foto 5" },
+  { src: "/gallery/IMG_0047.webp", alt: "Party Foto 6" },
 ];
 
 export default function Gallery() {
