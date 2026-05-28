@@ -7,7 +7,7 @@ export const event = {
   date: "13.JUNI",
   time: "23 UHR",
   venue: "Nachtwerk Club · München",
-  ticketUrl: "https://o6367.t0158.bookzuck.com/ticket-client-naga/event/llzsce?mode=ticket",
+  ticketUrl: "https://tickets.nachtwerk-club.de/ticket-client/event/llzsce?mode=ticket",
   instagramUrl: "https://www.instagram.com/eudaimonia.de/",
   instagramHandle: "@eudaimonia.de",
   siteUrl: "https://eudaimonia-event.de",
