@@ -24,24 +24,6 @@ export type Act = {
   desc: string;
 };
 
-export const lineup: Act[] = [
-  {
-    time: "23:00",
-    name: "DJ DYNA",
-    genre: "DANCEPOP · TRANCE",
-    desc: "DJ DYNA eröffnet den Abend mit DancePop-Hits — Vicky, Zara Larsson, Lady Gaga, Tate McRae, Shakira bis ROSALÍA. Direkt auf den Floor, von Sekunde eins.",
-  },
-  {
-    time: "~01:00",
-    name: "Dragshow & Hosting",
-    origin: "@itsabarbieq",
-    desc: "Dragshow und Hosting von @itsabarbieq – glamourös, frech, unverschämt unterhaltsam. Die Bühne gehört der Diva.",
-  },
-  {
-    time: "02:30",
-    name: "SONALIE SOLAR",
-    origin: "Munich",
-    genre: "SEXY LATIN TECHNO",
-    desc: "Sexy Latin Techno – heiße Rhythmen, treibende Beats. Sonalie Solar bringt München zum Beben.",
-  },
-];
+// Lineup für den 15.08.26 steht noch nicht fest.
+// Acts hier eintragen, sobald bekannt – der Platzhalter verschwindet dann automatisch.
+export const lineup: Act[] = [];

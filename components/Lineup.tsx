@@ -26,6 +26,23 @@ export default function Lineup() {
           Lineup 15.08.26
         </motion.p>
 
+        {lineup.length === 0 && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={viewport}
+            transition={{ duration: 0.6 }}
+            className="rounded-sm bg-white/[0.04] backdrop-blur-sm border border-white/[0.07] px-6 py-12 text-center"
+          >
+            <h3 className="font-display font-bold text-2xl sm:text-3xl tracking-wide text-iris">
+              Coming soon
+            </h3>
+            <p className="text-white/50 text-sm mt-3">
+              Das Lineup wird bald bekannt gegeben. Folge uns für Updates.
+            </p>
+          </motion.div>
+        )}
+
         <div className="flex flex-col gap-6">
           {lineup.map((act, i) => (
             <motion.div
