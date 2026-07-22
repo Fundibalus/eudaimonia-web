@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     template: "%s | EUDAIMONIA",
   },
   description:
-    "EUDAIMONIA — queere Clubnacht in München. Queer & FLINTA* friendly, Awareness Concept, Safe Space. 15. August 2026, 23 Uhr, Nachtwerk Club München.",
+    "EUDAIMONIA — queere Clubnacht in München. Queer & FLINTA* friendly, Awareness Concept, Safe Space. 15. August 2026, 22 Uhr, Nachtwerk Club München.",
   keywords: [
     "EUDAIMONIA",
     "queere Party München",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "EUDAIMONIA — Feel Free. Feel Safe.",
-    description: "15. August 2026 · 23 Uhr · Nachtwerk Club München. Queer & FLINTA* friendly.",
+    description: "15. August 2026 · 22 Uhr · Nachtwerk Club München. Queer & FLINTA* friendly.",
     url: "https://eudaimonia-event.de",
     siteName: "EUDAIMONIA",
     images: [{ url: "/flyer.png", width: 1200, height: 630, alt: "EUDAIMONIA Flyer 15.08.2026" }],
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EUDAIMONIA — Feel Free. Feel Safe.",
-    description: "15. August 2026 · 23 Uhr · Nachtwerk Club München.",
+    description: "15. August 2026 · 22 Uhr · Nachtwerk Club München.",
     images: ["/flyer.png"],
   },
   robots: {
