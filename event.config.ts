@@ -24,6 +24,10 @@ export type Act = {
   desc: string;
 };
 
-// Lineup für den 15.08.26 steht noch nicht fest.
-// Acts hier eintragen, sobald bekannt – der Platzhalter verschwindet dann automatisch.
-export const lineup: Act[] = [];
+// Acts hier eintragen – der "Coming soon"-Platzhalter verschwindet automatisch,
+// sobald das Array nicht mehr leer ist.
+export const lineup: Act[] = [
+  { time: "", name: "DJ DYNA", desc: "" },
+  { time: "", name: "Barbie Q", genre: "Drag Show · Dance & Pop", desc: "" },
+  { time: "", name: "Ivo Bischoff", origin: "Berlin", genre: "Dance & Pop", desc: "" },
+];
