@@ -4,7 +4,7 @@
 // ─────────────────────────────────────────────────────────────
 
 export const event = {
-  date: "15.AUGUST",
+  date: "3.OKTOBER",
   time: "22 UHR",
   venue: "Nachtwerk Club · München",
   ticketUrl: "https://tickets.nachtwerk-club.de/ticket-client/event/wbtqbj?mode=ticket",
@@ -12,8 +12,8 @@ export const event = {
   instagramHandle: "@eudaimonia.de",
   siteUrl: "https://eudaimonia-event.de",
   // ISO date for structured data
-  isoDate: "2026-08-15T22:00:00+02:00",
-  isoDateEnd: "2026-08-16T06:00:00+02:00",
+  isoDate: "2026-10-03T22:00:00+02:00",
+  isoDateEnd: "2026-10-04T06:00:00+02:00",
 };
 
 export type Act = {

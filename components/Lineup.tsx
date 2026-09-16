@@ -23,7 +23,7 @@ export default function Lineup() {
           transition={{ duration: 0.6 }}
           className="font-display text-[0.7rem] tracking-[0.3em] text-white/80 uppercase mb-12 text-center w-full"
         >
-          Lineup 15.08.26
+          Lineup 03.10.26
         </motion.p>
 
         {lineup.length === 0 && (
