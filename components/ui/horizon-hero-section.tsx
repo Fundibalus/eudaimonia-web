@@ -69,7 +69,7 @@ export default function HorizonHero() {
           }}
         />
         <img
-          src="/summer_logo.webp"
+          src="/bavaria_logo.webp"
           alt="EUDAIMONIA"
           width={720}
           height={669}

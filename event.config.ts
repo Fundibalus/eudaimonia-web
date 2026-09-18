@@ -7,7 +7,7 @@ export const event = {
   date: "3.OKTOBER",
   time: "22 UHR",
   venue: "Nachtwerk Club · München",
-  ticketUrl: "https://tickets.nachtwerk-club.de/ticket-client/event/wbtqbj?mode=ticket",
+  ticketUrl: "https://tickets.nachtwerk-club.de/ticket-client/event/oxbyuv?mode=ticket",
   instagramUrl: "https://www.instagram.com/eudaimonia.de/",
   instagramHandle: "@eudaimonia.de",
   siteUrl: "https://eudaimonia-event.de",
@@ -27,6 +27,20 @@ export type Act = {
 // Acts hier eintragen – der "Coming soon"-Platzhalter verschwindet automatisch,
 // sobald das Array nicht mehr leer ist.
 export const lineup: Act[] = [
-  { time: "", name: "DJ DYNA", desc: "" },
-  { time: "", name: "Callherdog", desc: "" },
+  {
+    time: "",
+    name: "Specials",
+    genre: "Drag Show · Wiesn Gaymes",
+    desc: "Drag Show, WIESN GAYMES 2026 und mehr! Bayerische Disziplinen, aber make it queer: Fingerhakeln, Maßkrugstemmen, ein cunty-bayerisches Dance Battle und mehr. Auf der Bühne, vor Publikum und mit fetten Preisen.",
+  },
+  {
+    time: "ab 23 Uhr",
+    name: "DJ DYNA",
+    desc: "Von 00–01 Uhr gibt's ein ganz besonderes Deutsch-Special – mit Songs von und angelehnt an Artists wie Baran Kok, Filow, Ikkimel, Mariybu & Co.",
+  },
+  {
+    time: "ab 02 Uhr",
+    name: "CALLHERDOG",
+    desc: "Übernimmt den Dancefloor und steht für Eskapismus, Verbindung und die gemeinsame Auszeit vom Alltag. Musik, die uns loslassen, tanzen und einfach wir selbst sein lässt.",
+  },
 ];
