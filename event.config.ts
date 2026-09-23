@@ -5,14 +5,14 @@
 
 export const event = {
   date: "3.OKTOBER",
-  time: "22 UHR",
+  time: "23 UHR",
   venue: "Nachtwerk Club · München",
   ticketUrl: "https://tickets.nachtwerk-club.de/ticket-client/event/oxbyuv?mode=ticket",
   instagramUrl: "https://www.instagram.com/eudaimonia.de/",
   instagramHandle: "@eudaimonia.de",
   siteUrl: "https://eudaimonia-event.de",
   // ISO date for structured data
-  isoDate: "2026-10-03T22:00:00+02:00",
+  isoDate: "2026-10-03T23:00:00+02:00",
   isoDateEnd: "2026-10-04T06:00:00+02:00",
 };
 

@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 import { ButtonColorful } from "@/components/ui/button-colorful";
+import { Button } from "@/components/ui/button";
 import { event } from "@/event.config";
 
 const Warp = dynamic(
@@ -98,8 +99,36 @@ export default function HorizonHero() {
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, delay: 1.0, ease: [0.16, 1, 0.3, 1] }}
+        className="flex flex-wrap items-center justify-center gap-3"
       >
         <ButtonColorful label="Tickets" href={event.ticketUrl} target="_blank" rel="noopener noreferrer" />
+        <Button
+          asChild
+          variant="outline"
+          className="h-10 px-6 border-white/20 hover:bg-white/10 hover:border-white/30"
+        >
+          <a href={event.instagramUrl} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <span className="flex items-center gap-2">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+                className="w-3.5 h-3.5 text-white/90"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+              <span className="text-white font-display tracking-widest text-sm uppercase">
+                Instagram
+              </span>
+            </span>
+          </a>
+        </Button>
       </motion.div>
     </div>,
 
