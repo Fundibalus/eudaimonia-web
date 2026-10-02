@@ -1,7 +1,10 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
 
-export const metadata = { title: "Impressum · EUDAIMONIA" };
+export const metadata = {
+  title: "Impressum · EUDAIMONIA",
+  robots: { index: false, follow: true },
+};
 
 export default function Impressum() {
   return (
@@ -25,8 +28,8 @@ export default function Impressum() {
               Angaben gemäß § 5 DDG
             </h2>
             <p>Daniel Tonnar-Leyva</p>
-            <p>Landsbergerstraße 106</p>
-            <p>80339 München</p>
+            <p>Benediktstraße 8</p>
+            <p>82069 Hohenschäftlarn</p>
           </section>
 
           <section>
@@ -40,7 +43,6 @@ export default function Impressum() {
             <h2 className="font-display text-xs tracking-[0.2em] text-white/40 uppercase mb-3">
               Kontakt
             </h2>
-            <p>Telefon: +49 157 5028 5907</p>
             <p>E-Mail: info@eudaimonia-event.de</p>
           </section>
 
@@ -49,8 +51,8 @@ export default function Impressum() {
               Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
             </h2>
             <p>Daniel Tonnar-Leyva</p>
-            <p>Landsbergerstraße 106</p>
-            <p>80339 München</p>
+            <p>Benediktstraße 8</p>
+            <p>82069 Hohenschäftlarn</p>
           </section>
 
           <section>

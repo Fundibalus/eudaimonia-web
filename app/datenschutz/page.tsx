@@ -1,7 +1,10 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
 
-export const metadata = { title: "Datenschutz · EUDAIMONIA" };
+export const metadata = {
+  title: "Datenschutz · EUDAIMONIA",
+  robots: { index: false, follow: true },
+};
 
 export default function Datenschutz() {
   return (
@@ -86,8 +89,8 @@ export default function Datenschutz() {
               Website ist:
             </p>
             <p className="mt-2">Daniel Tonnar-Leyva</p>
-            <p>Landsbergerstraße 106</p>
-            <p>80339 München</p>
+            <p>Benediktstraße 8</p>
+            <p>82069 Hohenschäftlarn</p>
             <p>E-Mail: info@eudaimonia-event.de</p>
           </section>
 
