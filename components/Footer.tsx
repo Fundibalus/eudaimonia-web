@@ -47,10 +47,10 @@ export default function Footer() {
 
         <div>
           <p className="text-white/50 text-xs leading-relaxed">
-            Nachtwerk Club (neben Nachtgalerie)
+            Backstage München (Halle)
           </p>
           <p className="text-white/30 text-xs">
-            Landsbergerstr. 185, 80687 München
+            Reitknechtstr. 6, 80639 München
           </p>
         </div>
       </div>

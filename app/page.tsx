@@ -17,12 +17,12 @@ const jsonLd = {
   eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
   location: {
     "@type": "MusicVenue",
-    name: "Nachtwerk Club",
+    name: "Backstage München",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Landsberger Str. 185",
+      streetAddress: "Reitknechtstraße 6",
       addressLocality: "München",
-      postalCode: "80687",
+      postalCode: "80639",
       addressCountry: "DE",
     },
   },

@@ -34,17 +34,17 @@ const instrumentSerif = Instrument_Serif({
 export const metadata: Metadata = {
   metadataBase: new URL("https://eudaimonia-event.de"),
   title: {
-    default: "EUDAIMONIA — Feel Free. Feel Safe. | München 03.10.26",
+    default: "EUDAIMONIA — Feel Free. Feel Safe. | München 12.12.26",
     template: "%s | EUDAIMONIA",
   },
   description:
-    "EUDAIMONIA — queere Clubnacht in München. Queer & FLINTA* friendly, Awareness Concept, Safe Space. 3. Oktober 2026, 23 Uhr, Nachtwerk Club München.",
+    "EUDAIMONIA — queere Clubnacht in München. Queer & FLINTA* friendly, Awareness Concept, Safe Space. 12. Dezember 2026, 22:30 Uhr, Backstage München.",
   keywords: [
     "EUDAIMONIA",
     "queere Party München",
     "FLINTA Party München",
     "queer club München",
-    "Nachtwerk München",
+    "Backstage München",
     "queere Clubnacht",
     "safe space Party",
     "queeres Event München",
@@ -54,17 +54,17 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "EUDAIMONIA — Feel Free. Feel Safe.",
-    description: "3. Oktober 2026 · 23 Uhr · Nachtwerk Club München. Queer & FLINTA* friendly.",
+    description: "12. Dezember 2026 · 22:30 Uhr · Backstage München. Queer & FLINTA* friendly.",
     url: "https://eudaimonia-event.de",
     siteName: "EUDAIMONIA",
-    images: [{ url: "/flyer.png", width: 1200, height: 630, alt: "EUDAIMONIA Flyer 03.10.2026" }],
+    images: [{ url: "/flyer.png", width: 1200, height: 630, alt: "EUDAIMONIA Flyer 12.12.2026" }],
     locale: "de_DE",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "EUDAIMONIA — Feel Free. Feel Safe.",
-    description: "3. Oktober 2026 · 23 Uhr · Nachtwerk Club München.",
+    description: "12. Dezember 2026 · 22:30 Uhr · Backstage München.",
     images: ["/flyer.png"],
   },
   robots: {
