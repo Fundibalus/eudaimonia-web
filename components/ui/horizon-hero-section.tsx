@@ -58,7 +58,7 @@ export default function HorizonHero() {
         initial={{ scale: 0.88, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-        className="relative w-[min(360px,70vw)] h-[min(360px,70vw)]"
+        className="relative w-[min(440px,80vw)] h-[min(440px,80vw)]"
         style={{ opacity: 0 }}
       >
         <div
@@ -72,8 +72,8 @@ export default function HorizonHero() {
         <img
           src="/winter.webp"
           alt="EUDAIMONIA"
-          width={720}
-          height={669}
+          width={893}
+          height={1600}
           decoding="async"
           fetchPriority="high"
           className="relative w-full h-full object-contain"
