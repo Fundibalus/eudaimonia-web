@@ -5,14 +5,14 @@
 
 export const event = {
   date: "12.DEZEMBER",
-  time: "22:30 UHR",
+  time: "23:30 UHR",
   venue: "Backstage München · Halle",
   ticketUrl: "https://www.backstage.eu/event/6d9406db-2099-47a4-87df-c9dcbac2774c",
   instagramUrl: "https://www.instagram.com/eudaimonia.de/",
   instagramHandle: "@eudaimonia.de",
   siteUrl: "https://eudaimonia-event.de",
   // ISO date for structured data
-  isoDate: "2026-12-12T22:30:00+01:00",
+  isoDate: "2026-12-12T23:30:00+01:00",
   isoDateEnd: "2026-12-13T06:00:00+01:00",
 };
 
@@ -28,10 +28,10 @@ export type Act = {
 // sobald das Array nicht mehr leer ist.
 export const lineup: Act[] = [
   {
-    time: "Auftakt",
+    time: "Opening",
     name: "Marlon & Fabi",
     origin: "München",
-    desc: "Den Auftakt macht das Duo aus München und bringt das Backstage zum Schmelzen.",
+    desc: "Das Duo aus München eröffnet den Abend und bringt das Backstage zum Schmelzen.",
   },
   {
     time: "00:15 – 02:15",
